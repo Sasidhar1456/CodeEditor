@@ -8,10 +8,15 @@ export const LANGUAGE_VERSIONS = {
 }
 
 export const CODE_SNIPPETS = {
-  python: `num1 = int(input("Enter your 1st number: "))\nnum2 = int(input("Enter your 2nd number: "))\nprint("Sum of two numbers is", num1 + num2)`,
-  javascript: `const num1 = parseInt(prompt("Enter your 1st number: "));\nconst num2 = parseInt(prompt("Enter your 2nd number: "));\nconsole.log("Sum of two numbers is", num1 + num2);`,
-  typescript: `const num1: number = parseInt(prompt("Enter your 1st number: ")!);\nconst num2: number = parseInt(prompt("Enter your 2nd number: ")!);\nconsole.log("Sum of two numbers is", num1 + num2);`,
-  java: `import java.util.Scanner;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scanner = new Scanner(System.in);\n    System.out.print("Enter your 1st number: ");\n    int num1 = scanner.nextInt();\n    System.out.print("Enter your 2nd number: ");\n    int num2 = scanner.nextInt();\n    System.out.println("Sum of two numbers is " + (num1 + num2));\n  }\n}`,
-  csharp: `using System;\n\nclass Program {\n  static void Main() {\n    Console.Write("Enter your 1st number: ");\n    int num1 = int.Parse(Console.ReadLine());\n    Console.Write("Enter your 2nd number: ");\n    int num2 = int.Parse(Console.ReadLine());\n    Console.WriteLine("Sum of two numbers is " + (num1 + num2));\n  }\n}`,
-  php: `<?php\n$first = readline("Enter your 1st number: ");\n$second = readline("Enter your 2nd number: ");\necho "Sum of two numbers is " . ($first + $second);\n?>`,
-}
+  python: `num1 = int(input(" "))\nnum2 = int(input(" "))\nprint(f"The sum of {num1} and {num2} is {num1 + num2}")`,
+
+  javascript: `const num1 = parseInt(prompt(" "));\nconst num2 = parseInt(prompt(" "));\nconsole.log(\`The sum of \${num1} and \${num2} is \${num1 + num2}\`);`,
+
+  typescript: `const num1: number = parseInt(prompt(" ")!);\nconst num2: number = parseInt(prompt(" ")!);\nconsole.log(\`The sum of \${num1} and \${num2} is \${num1 + num2}\`);`,
+
+  java: `import java.util.Scanner;\n\npublic class Main {\n public static void main(String[] args) {\n Scanner scanner = new Scanner(System.in);\n System.out.print(" ");\n int num1 = scanner.nextInt();\n System.out.print(" ");\n int num2 = scanner.nextInt();\n System.out.println("The sum of " + num1 + " and " + num2 + " is " + (num1 + num2));\n }\n}`,
+
+  csharp: `using System;\n\nclass Program {\n static void Main() {\n Console.Write(" ");\n int num1 = int.Parse(Console.ReadLine());\n Console.Write(" ");\n int num2 = int.Parse(Console.ReadLine());\n Console.WriteLine("The sum of " + num1 + " and " + num2 + " is " + (num1 + num2));\n }\n}`,
+
+  php: `<?php\n$first = readline(" ");\n$second = readline(" ");\necho "The sum of " . $first . " and " . $second . " is " . ($first + $second);\n?>`,
+};
