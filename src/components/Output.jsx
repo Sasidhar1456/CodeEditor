@@ -51,7 +51,7 @@ const Output = ({ editorRef, language }) => {
   }
 
   return (
-    <Box w="50%">
+    <Box  w={{ base: "100%", md: "50%" }}>
       <Text mb={2} fontSize="lg">Enter Your Input Here:</Text>
       <Textarea
         placeholder="Type your stdin here..."
